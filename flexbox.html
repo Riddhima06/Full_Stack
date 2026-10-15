@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 90vh;
+        outline: 3px solid black;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .container > div {
+        background-color: black;
+        color: white;
+        width: 150px;
+        height: 100px;
+        align-content: center;
+        text-align: center;
+      }
+      #box1 {
+        flex-basis: 150px;
+        background-color: red;
+        /* flex-grow: 1;
+        flex-shrink: 1; */
+      }
+      #box2 {
+        flex-basis: 150px;
+        /* flex-grow: 3;
+        flex-shrink: 1; */
+      }
+      #box3 {
+        flex-basis: 150px;
+        background-color: blue;
+        /* flex-grow: 1;
+        flex-shrink: 2; */
+      }
+      #box4 {
+        flex-basis: 150px;
+        background-color: green;
+        /* flex-grow: 1;
+        flex-shrink: 1; */
+      }
+      #box5 {
+        flex-basis: 150px;
+        background-color: yellow;
+        /* flex-grow: 1;
+            flex-shrink: 1; */
+      }
+      #box6 {
+        flex-basis: 150px;
+        background-color: orange;
+        /* flex-grow: 1;
+        flex-shrink: 1; */
+      }
+      #box7 {
+        flex-basis: 150px;
+        background-color: purple;
+        /* flex-grow: 1;
+        flex-shrink: 1; */
+      }
+      #box8 {
+        flex-basis: 150px;
+        background-color: pink;
+        /* flex-grow: 1;
+        flex-shrink: 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box1">1</div>
+      <div id="box2">2</div>
+      <div id="box3">3</div>
+      <div id="box4">4</div>
+      <div id="box5">5</div>
+      <div id="box6">6</div>
+      <div id="box7">7</div>
+      <div id="box8">8</div>
+    </div>
+  </body>
+</html>

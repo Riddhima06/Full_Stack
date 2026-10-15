@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 50vh;
+        outline: 3px solid black;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .container > div {
+        background-color: white;
+        color: black;
+        width: 150px;
+        height: 100px;
+        align-content: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="1">
+        <h1>Login</h1>
+
+        Username:
+        <input type="text" placeholder="Username" />
+        Password:
+        <input type="password" placeholder="Password" />
+        <button>Login</button>
+      </div>
+    </div>
+  </body>
+</html>

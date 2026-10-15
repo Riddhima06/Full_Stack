@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 360px 290px 220px;
+        gap: 18px;
+        max-width: 1400px;
+        margin: auto;
+        grid-template-areas:
+          "box1 box1 box2"
+          "box4 box5 box3"
+          "box6 box6 box3";
+      }
+      .container > div {
+        overflow: hidden;
+        border-radius: 22px;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div style="grid-area: box1">
+        <img src="https://picsum.photos/seed/picsum/1000/1000" />
+      </div>
+      <div style="grid-area: box2">
+        <img src="https://picsum.photos/id/237/500/500" />
+      </div>
+      <div style="grid-area: box3">
+        <img src="https://picsum.photos/id/238/500/500" />
+      </div>
+      <div style="grid-area: box4">
+        <img src="https://picsum.photos/id/239/500/500" />
+      </div>
+      <div style="grid-area: box5">
+        <img src="https://picsum.photos/id/240/500/500" />
+      </div>
+      <div style="grid-area: box6">
+        <img src="https://picsum.photos/id/241/500/500" />
+      </div>
+    </div>
+  </body>
+</html>

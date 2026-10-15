@@ -1,0 +1,133 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Product Dashboard</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      h1 {
+        text-align: center;
+        margin: 30px 0;
+        color: #222;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+      .container > div {
+        background-color: white;
+        border: 2px solid black;
+
+        width: 250px;
+        height: 300px;
+
+        text-align: center;
+        padding: 15px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .container img {
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+      button {
+        color: white;
+        background-color: blue;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>PRODUCT DASHBOARD</h1>
+
+    <div class="container">
+      <div>
+        <img src="https://picsum.photos/id/0/150/100" alt="Laptop" />
+        <h3>Laptop</h3>
+        <p>$100</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div>
+        <img src="https://picsum.photos/id/24/150/100" alt="Books" />
+        <h3>Books</h3>
+        <p>$200</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div>
+        <img src="https://picsum.photos/id/26/150/100" alt="Electronics" />
+        <h3>Electronics</h3>
+        <p>$300</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div>
+        <img src="https://picsum.photos/id/48/150/100" alt="Macbook" />
+        <h3>Macbook</h3>
+        <p>$400</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div>
+        <img src="https://picsum.photos/id/75/150/100" alt="Blueberries" />
+        <h3>Blueberries</h3>
+        <p>$500</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div>
+        <img src="https://picsum.photos/id/160/150/100" alt="Phone" />
+        <h3>Phone</h3>
+        <p>$600</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div>
+        <img src="https://picsum.photos/id/91/150/100" alt="Camera" />
+        <h3>Camera</h3>
+        <p>$700</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div>
+        <img src="https://picsum.photos/id/111/150/100" alt="Vintage Car" />
+        <h3>Vintage Car</h3>
+        <p>$800</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </body>
+</html>
+```

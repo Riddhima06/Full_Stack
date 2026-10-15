@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #myId {
+        color: blueviolet;
+      }
+      .myClass {
+        color: red;
+        text-shadow: 1px 1px 0px black;
+      }
+      h2 {
+        font-size: 40px;
+        color: blue;
+      }
+      input[type="email"] {
+        border-width: 0 0 3px 0;
+        border-color: blue;
+      }
+      li[data="null"] {
+        background-color: yellow;
+      }
+      section h2 {
+        color: aqua;
+      }
+      section > h2 {
+        color: blueviolet;
+      }
+      h2 ~ p {
+        color: green;
+        font-size: 40px;
+      }
+      h2 + p {
+        color: yellow;
+        font-size: 35px;
+        text-shadow: 0 0 3px black;
+      }
+      p:hover {
+        color: aquamarine;
+      }
+      button {
+        color: white;
+        background-color: black;
+        border-width: 0px;
+        font-size: 40px;
+      }
+      button:hover {
+        border-width: 0px;
+        box-shadow: 3px 3px 5px black;
+      }
+      button:active {
+        box-shadow: 0px 0px 0px;
+        background-color: grey;
+      }
+      input[type="checkbox"] {
+        height: 50px;
+        width: 50px;
+      }
+      input:checked {
+        box-shadow: 3px 3px 5px grey;
+        accent-color: red;
+      }
+      button:focus {
+        outline: 3px solid red;
+      }
+      a {
+        font-size: 40px;
+      }
+      a:link {
+        color: red;
+      }
+      /* a:visited {
+        color: grey;
+      } */
+      /*
+       form based pseudo classes:
+       :enabled
+        :disabled
+        :required
+        :optional
+        :read-only
+        :read-write
+        :placeholder-shown
+        :valid
+        :invalid
+        :in-range
+        :out-of-range
+        :checked
+       */
+      /*
+       some other pseudo classes:
+       :has
+       :is
+       :not
+       :where
+       */
+      div:has(h1) {
+        background-color: black;
+        color: white;
+      }
+      input:required {
+        font-size: 40px;
+      }
+      input:not(:checked) {
+        background-color: cornflowerblue;
+      }
+      div:has(:checked) {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" target="blank">LINK</a><br /><br />
+    <button>submit</button><br /><br />
+    <input type="checkbox" />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias hic
+      voluptatem tempore ea aliquam earum deleniti unde, explicabo pariatur
+      quidem officiis dolores illo voluptate necessitatibus nesciunt cumque!
+      Facere, eos nemo. Qui pariatur et consectetur ex eveniet, odit, voluptate
+      iusto, perferendis a possimus nesciunt itaque sequi sed! Provident aperiam
+      vero facere. Nam, aspernatur possimus quis mollitia commodi veritatis.
+      Ipsa, porro accusamus? Quia doloribus consectetur eveniet nostrum eos
+      accusantium ipsum tempore libero sint quibusdam, aperiam ex provident
+      explicabo cumque vitae tempora error! Dolore fuga eius dolorem magnam
+      minus harum quos repellendus dolores. Tempora, fugiat ratione veritatis
+      similique dolore voluptas? Placeat, minima. Odit, nihil? Quae quibusdam,
+      excepturi quia animi iste quidem blanditiis architecto nobis! Quasi
+      asperiores porro dolorem quia explicabo, ab nesciunt autem. Et vel,
+      distinctio corrupti deserunt voluptas id similique aliquid accusamus,
+      expedita, molestiae reprehenderit minima quibusdam consequuntur ab
+      consequatur eaque nisi exercitationem consectetur officiis necessitatibus
+      ea? Rerum nam labore natus facilis. Ipsum eum iure voluptate fugiat
+      voluptatibus deserunt, tempore non voluptas excepturi tenetur nobis
+      repellat dicta molestiae iste molestias, necessitatibus, sunt maxime.
+      Provident magnam reiciendis quasi molestias tempora quisquam labore dicta!
+      Debitis quis ratione asperiores corrupti, cupiditate eaque enim in dicta
+      architecto veniam, officiis hic? Temporibus dolorem recusandae sed quia
+      assumenda! Suscipit, laboriosam maxime consequatur exercitationem
+      repudiandae placeat asperiores magni maiores! Laudantium, quos animi
+      cupiditate eligendi nemo commodi odit minima dolorem! Ipsam nam vero
+      obcaecati magni laboriosam veritatis, impedit cupiditate aspernatur ex.
+      Doloremque illum quae, odit nam sequi ea at omnis. Quam sit accusantium
+      quis facere, rem sunt inventore tempora, qui minima molestiae officiis
+      alias itaque explicabo esse! Quis blanditiis quia ipsum? Repellat labore
+      consectetur omnis non, doloremque quos velit repudiandae? Optio quibusdam
+      veritatis delectus, consequuntur numquam assumenda id reprehenderit fuga
+      voluptatibus quod autem porro expedita nesciunt nobis exercitationem
+      debitis esse magni inventore! Commodi exercitationem illo dolorem possimus
+      vitae repellendus delectus.
+    </p>
+    <section>
+      <h2>Heading</h2>
+      <p>Para1</p>
+      <p>Para2</p>
+      <div>
+        <h2>Heading 2</h2>
+      </div>
+    </section>
+    <h2>Selectors</h2>
+    <ul>
+      <li class="myClass">Universal</li>
+      <li id="myId">Id</li>
+      <li class="myClass">Class</li>
+      <li>Element</li>
+      <li data="null">Attribute</li>
+      <li>Combinators</li>
+      <li>Pseudo Class</li>
+      <li>Pseudo Element</li>
+    </ul>
+    <input type="email" placeholder="Email" /><br /><br />
+    <input type="password" placeholder="Password" /><br />
+  </body>
+</html>
