@@ -3,10 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="trafficlight.js"></script>
+    <title>Traffic Light Simulator</title>
+    <script src="trafficlight.js" defer></script>
+    <style>
+      #traffic-light {
+        background: black;
+        width: 80px;
+        padding: 10px;
+        border-radius: 15px;
+      }
+
+      .light {
+        width: 50px;
+        height: 50px;
+        margin: 10px auto;
+        border-radius: 50%;
+        background: grey;
+      }
+
+      .red {
+        background: red;
+      }
+      .yellow {
+        background: yellow;
+      }
+      .green {
+        background: green;
+      }
+    </style>
   </head>
   <body>
     <h2>Traffic Light Simulator</h2>
+
+    <button onclick="changeLight()">Change Light</button>
+
+    <div id="traffic-light">
+      <div id="red" class="light red"></div>
+      <div id="yellow" class="light"></div>
+      <div id="green" class="light"></div>
+    </div>
   </body>
 </html>
